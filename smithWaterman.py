@@ -89,8 +89,17 @@ def smithWaterman(sequencia1, sequencia2, match=2, mismatch=-1, gap=-1, status=T
 	resultadoSequencia2 = resultadoSequencia2[::-1]
 
 	if status:
-		print('\n \tMATRIZ:\n')
+		print('\n--------------------INFORMAÇÕES RELEVANTES--------------------------')
+		print('  SEQUÊNCIA 1: %s' % sequencia1)
+		print('  SEQUÊNCIA 2: %s' % sequencia2)
+		print('  MATCH: %s' % match)
+		print('  MISMATCH: %s' % mismatch)
+		print('  GAP: %s' % gap)
+		print('--------------------------------------------------------------------')	
+
+		print('\n-------------------------------MATRIZ-------------------------------')
 		escreveMatriz(matriz, linha)
+		print('--------------------------------------------------------------------')			
 		print('\nSEQUÊNCIA 1: %s' % resultadoSequencia1)
 		print('SEQUÊNCIA 2: %s\n' % resultadoSequencia2)
 
